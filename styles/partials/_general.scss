@@ -1,0 +1,31 @@
+h2 {
+    margin-bottom: 25px;
+}
+
+.wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containerColumnCentered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+i {
+    font-size: 7rem;
+}
+
+.hide {
+    display: none;
+}

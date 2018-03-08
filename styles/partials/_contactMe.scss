@@ -1,0 +1,22 @@
+.contact {
+    padding: 150px 0;
+    form {
+        width: 100%;
+    }
+    input {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        min-height: 200px;
+    }
+}
+
+.form-item {
+    align-items: flex-start;
+    width: 45%;
+    &:last-child {
+        width: 100%;
+    }
+}
