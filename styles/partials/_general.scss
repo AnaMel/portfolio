@@ -22,10 +22,18 @@ h2 {
     width: 60%;
 }
 
-i {
-    font-size: 7rem;
-}
-
 .hide {
     display: none;
+}
+
+button{
+    color: $main-ltgrey;
+    width: 270px;
+    position: relative;
+    &::before {
+        content: url(../assets/shine.png);
+        position: absolute;
+        top: 5px;
+        left: 7px;
+    }
 }

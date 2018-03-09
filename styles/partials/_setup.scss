@@ -39,13 +39,13 @@ ul {
 
 a {
     text-decoration: none;
-    // text-transform: uppercase;
     font-weight: bold;
     color: $main-dark;
     &:focus,
     &:visited {
         color: $main-dark;
     }
+    transition: all 1s;
 }
 
 img {
@@ -59,8 +59,9 @@ textarea,
 button {
     -moz-appearance: none;
     -webkit-appearance: none;   
-    border: 1px solid salmon;
-    border-radius: 10px;
-    padding: 20px 15px;
+    border: none;
+    background-color: $grey;
+    border-radius: 30px;
+    padding: 20px;
     transition: 0.3s;
 }

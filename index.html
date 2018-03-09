@@ -12,13 +12,12 @@
 <body>
     <nav>
         <div class="wrapper container">
-            <div class="logo">ANASTASIЯ</div>
+            <div class="logo"><p>LOGO</p></div>
             <ul class="container">
                 <a href=""><li>Home</li></a>
-                <a href=""><li>About me</li></a>
-                <a href=""><li>Skills</li></a>
-                <a href=""><li>Portfolio</li></a>
-                <a href=""><li>Contact me</li></a>
+                <a href="#aboutMe"><li>About me</li></a>
+                <a href="#portfolio"><li>Portfolio</li></a>
+                <a href="#contactMe"><li>Contact me</li></a>
             </ul>
         </div>
     </nav>
@@ -27,53 +26,201 @@
             </div>
     </header>
     <main>
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <div class="wrapper containerColumnCentered">
+                <img class="monitor" src="assets/monitor.png" alt="image of a monitor">
                 <h2>About Me</h2>
                 <p>Hi, my name is Anastasiya and I am a front-end developer based in Toronto, Canada. Before becoming a developer, I was involved in software development process as a Business Analyst addressing needs of the business by managing requirements through the entire development life cycle.</p>
+                <img class="phone" src="assets/phone.png" alt="image of a monitor">
+                <img class="notebook" src="assets/notebook.png" alt="image of a monitor">
+                <img class="pen" src="assets/pen.png" alt="image of a monitor">
+                <img class="keyboard" src="assets/keyboard.png" alt="image of a monitor">
+                <img class="mouse" src="assets/mouse.png" alt="image of a monitor">
+                <img class="cup" src="assets/cup.png" alt="image of a monitor">
+                <button>Download my CV</button>
             </div>
         </section>
-        <section class="skills">
-                <div class="wrapper container">
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-sass-original colored"></i>
-                    <i class="devicon-jquery-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-react-original-wordmark colored"></i>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-github-plain colored"></i>
-                    <i class="devicon-gulp-plain colored"></i>
-                    <i class="devicon-mysql-plain colored"></i>
-                    <i class="devicon-confluence-plain colored"></i>
-                </div>
+        <!-- <section class="skills">
+                <div class="wrapper containerColumnCentered">
+                    <h2>Skill Set</h2>
+                    <div class="webDevSkills containerColumnCentered">
+                        <div class="program container">
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="html" href="" title="HTML5">
+                                        <i class="devicon-html5-plain-wordmark colored"></i>
+                                        <span class="hide">HTML5</span>
+                                    </a>
+                                </div>
+                                <p>HTML5</p>
+                            </div>
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="css" href="" title="CSS3">
+                                        <i class="devicon-css3-plain-wordmark colored"></i>
+                                        <span class="hide">CSS3</span>
+                                    </a>
+                                </div>
+                                <p>CSS3</p>
+                            </div>
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="html" href="" title="HTML5">
+                                        <i class="devicon-sass-original colored"></i>
+                                        <span class="hide">HTML5</span>
+                                    </a>
+                                </div>
+                                <p>Sass</p>
+                            </div>
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="jquery" href="" title="jQuery">
+                                        <i class="devicon-jquery-plain-wordmark colored"></i>
+                                        <span class="hide">jQuery</span>
+                                    </a>
+                                </div>
+                                <p>jQuery</p>
+                            </div>
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="js" href="" title="JavaScript">
+                                        <i class="devicon-javascript-plain colored"></i>
+                                        <span class="hide">JavaScript</span>
+                                    </a>
+                                </div>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="react" href="" title="React">
+                                        <i class="devicon-react-original-wordmark colored"></i>
+                                        <span class="hide">React</span>
+                                    </a>
+                                </div>
+                                <p>React</p>
+                            </div>
+                        </div>
+                        <div class="tools">
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="git" href="" title="Git&Github">
+                                        <i class="devicon-git-plain colored"></i>
+                                        <span class="hide">Git&Github</span>
+                                    </a>
+                                </div>
+                                <p>Git & Github</p>
+                            </div>
+                            <div class="skill">
+                                <div class="circle">
+                                    <a class="gulp" href="" title="Gulp">
+                                        <i class="devicon-gulp-plain colored"></i>
+                                        <span class="hide">Gulp</span>
+                                    </a>
+                                </div>
+                                <p>Gulp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <i class="devicon-confluence-plain colored"></i> -->
+                <!-- </div>
+        </section> -->
+        <section class="skill-belt container">
+            <div class="skill html">
+                <p>HTML5</p>
+            </div>
+            <div class="skill css">
+                <p>CSS3 & SASS</p>
+            </div>
+            <div class="skill js">
+                <p>jQuery & JavaScript</p>
+            </div>
+            <div class="skill react">
+                <p>React</p>
+            </div>
+            <div class="skill tools">
+                <p>Git & Gulp</p>
+            </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrapper container">
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contactMe">
             <div class="wrapper">
-                <h2>Contact Me</h2>
+                <h2>Get in touch</h2>
                 <form class="container">
-                    <div class="form-item containerColumnCentered">
+                    <div class="form-item">
                         <label for="message" class="hide">Your Name</label>
                         <input id="name" type="text" placeholder="Name">
                     </div>
-                    <div class="form-item containerColumnCentered">
+                    <div class="form-item">
                         <label for="message" class="hide">Your Email</label>
                         <input id="Email" type="email" placeholder="Email">
                     </div>
-                    <div class="form-item containerColumnCentered">
+                    <div class="form-item ">
                         <label for="message" class="hide">Message</label>
                         <textarea id="message" placeholder="Message"></textarea>
                     </div>
+                    <button>Reach Out</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer></footer>
-    <script src="https://use.fontawesome.com/f45c9c96e9.js"></script>
+    <footer>
+        <div class="wrapper">
+            <div class="container">
+                <div class="footer-item container">
+                    <div class="footer-image">
+                        <img src="assets/location.png" alt="location marker">
+                    </div>
+                    <p>Toronto, Canada</p>
+                </div>
+                <div class="footer-item container">
+                    <div class="footer-image">
+                        <img src="assets/mail.png" alt="paper plane icon">
+                    </div>
+                    <p>anastasya.mellenteva@gmail.com</p>
+                </div>
+                <div class="footer-item container">
+                    <div class="footer-image">
+                        <img src="assets/contactPhone.png" alt="phone">
+                    </div>
+                    <p>+1 (647) 667-91-22</p>
+                </div>
+            </div>
+            <div class="social-media container">
+                <div class="copyright">
+                    <p>Developed by Anastasiya Melentyeva | Design by firetheme</p>
+                </div>
+                <div class="social-media-links">
+                    <ul>
+                        <li><a class="github" href="https://github.com/AnaMel" title="Github">
+                                <i class="fab fa-github fa-2x"></i>
+                                <span class="hide">Github Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/in/anastasiya-melentyeva-a8758850/" title="LinkedIn">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                                <span class="hide">LinkedIn Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="https://twitter.com/anastasiyacodes" title="Twitter">
+                                <i class="fab fa-twitter-square fa-2x"></i>
+                                <span class="hide">Twitter Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Smooth Scroll cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

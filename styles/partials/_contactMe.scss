@@ -1,22 +1,29 @@
 .contact {
-    padding: 150px 0;
+    padding: 100px 0;
     form {
         width: 100%;
     }
     input {
-        margin-bottom: 25px;
         width: 100%;
     }
     textarea {
         width: 100%;
         min-height: 200px;
     }
+    button{
+        background-color: #4CC3C1;
+        &:hover,
+        &:focus {
+            background-color: #55D5D3;
+            // box-shadow: 6px 9px 24px 0px rgba(76, 195, 193, 0.44);
+        }
+    }
 }
 
 .form-item {
-    align-items: flex-start;
-    width: 45%;
-    &:last-child {
-        width: 100%;
+    flex-basis: 45%;
+    margin-bottom: 25px;
+    &:nth-child(3) {
+        flex-basis: 100%;
     }
 }

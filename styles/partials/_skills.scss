@@ -1,8 +1,50 @@
 .skills {
-    height: 400px;
-    padding: 150px 0;
-    background-image: url(../assets/Graph.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 100px 0;
+    background-color:#F9B037;
+    color: white;
+    // background-image: url(../assets/Graph.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     // background-attachment: fixed;
+}
+
+.webDevSkills {
+    width: 100%;
+    .skill {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-basis: 33.3%;
+        margin-bottom: 25px;
+        i {
+            font-size: 4rem;
+        } 
+        p {
+            font-size: 2.4rem;
+            margin-left: 25px;
+        }
+    }
+}
+
+.circle {
+    
+    a {
+        display: inline-block;
+        position: relative;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        // border: 3px solid #e65100; 
+        border-radius: 30px; 
+        &:hover {
+            background-color: white;
+        }
+    }
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // transform: translateX(-50%);
+    }
 }

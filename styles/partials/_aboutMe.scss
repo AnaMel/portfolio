@@ -1,10 +1,62 @@
 .aboutMe {
-    padding: 200px 0 250px;
+    padding: 125px 0 240px;
     background-color: $main-dark;
     color: white;
     line-height: 3.5rem;
     letter-spacing: 1px;
+    position: relative;
     p {
         color: $main-ltgrey;
     }
+    img {
+        position: absolute;
+    }
+    .monitor {
+        max-width: 525px;
+        top: 0;
+    }
+    .phone {
+        max-width: 45px;
+        left: 15%;
+        top: 55%;
+    }
+    .notebook {
+        max-width: 100px;
+        left: 25%;
+        top: 68%;
+    }
+    .pen {
+        max-width: 30px;
+        left: 32.5%;
+        top: 70%;
+    }
+    .keyboard {
+        max-width: 250px;
+        bottom: 20px;
+    }
+    .mouse {
+        max-width: 40px;
+        right: 32.5%;
+        top: 70%;
+    }
+    .cup {
+        max-width: 75px;
+        right: 20%;
+        top: 55%;
+    }
+    button {
+        margin-top: 25px;
+        background-color: #3CB879;
+        &:hover,
+        &:focus {
+            background-color: #46D68D;
+            // box-shadow: 6px 9px 24px 0px rgba(76, 195, 193, 0.44);
+        }
+    }
+}
+
+.logo {
+    font-size: 3rem;
+    color: rgb(239, 89, 33);
+    font-weight: bold;
 }
