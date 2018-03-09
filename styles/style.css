@@ -331,6 +331,9 @@ nav {
   .tools p:after {
     content: 'Tools'; }
 
+.portfolio {
+  background-color: #FCFCFC; }
+
 .contact {
   padding: 100px 0; }
   .contact form {
