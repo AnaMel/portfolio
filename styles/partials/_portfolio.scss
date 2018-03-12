@@ -1,3 +1,24 @@
 .portfolio {
-    background-color: #FCFCFC
+    padding: 50px 0;
+    background-color: #FCFCFC;
+    .container {
+        flex-direction: column;
+    }
+}
+.project {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.project-image {
+    padding: 30px 5px;
+    background-color: rgba(239,89,33,0.7);
+    border-radius: 30px;
+}
+
+.campgenda {
+    .project-image{
+        background-color: #39b877;
+    }
 }
