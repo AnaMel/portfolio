@@ -7,7 +7,22 @@
         color: white;
         min-height: 130px;
         position: relative;
+        @media (max-width: 940px) {
+            padding: 20px 20px 0;
+        }
+        @media (max-width: 630px) {
+            flex-basis: 50%;
+            padding: 20px 10px 10px;
+            min-height: 60px;
+            text-align: center;
+        }
         p {
+            @media (max-width: 1150px) {
+                font-size: 2rem;
+            }
+            @media (max-width: 768px) {
+                font-size: 1.6rem;
+            }
             &:after{
                 z-index: 0;
                 position: absolute;
@@ -15,6 +30,23 @@
                 right: 20px;
                 font-size: 7rem;
                 color: rgba(255, 255, 255, 0.2); 
+                @media (max-width: 1150px) {
+                    font-size: 4.5rem;
+                }
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .tools {
+        background-color: rgb(57, 184, 119);
+        @media (max-width: 630px) {
+            flex-basis: 100%;
+        }
+        p {
+            &:after {
+                content: 'Tools';
             }
         }
     }
@@ -53,15 +85,6 @@
     p {
         &:after {
             content: 'React';
-        }
-    }
-}
-
-.tools {
-    background-color: rgb(57, 184, 119);
-    p {
-        &:after {
-            content: 'Tools';
         }
     }
 }

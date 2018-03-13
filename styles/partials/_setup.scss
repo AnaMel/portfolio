@@ -41,11 +41,14 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: $main-dark;
-    &:focus,
     &:visited {
         color: $main-dark;
     }
     transition: all 1s;
+    &:hover,
+    &:focus {
+        color: rgba(74, 194, 191, 1);
+    }
 }
 
 img {

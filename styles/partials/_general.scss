@@ -5,12 +5,35 @@ h2 {
 .wrapper {
     max-width: 1250px;
     margin: 0 auto;
+    width: 95%;
+    /* Portrait tablet and small desktops */
+    @media (max-width: 940px) {
+        width: 90%;
+    }
+
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 768px) {
+
+    }
+
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+    }
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.responsiveContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        display: block;
+    }
 }
 
 .containerColumnCentered {
@@ -20,6 +43,9 @@ h2 {
     align-items: center;
     text-align: center;
     width: 60%;
+    @media (max-width: 940px) {
+        width: 90%;
+    }
 }
 
 .hide {

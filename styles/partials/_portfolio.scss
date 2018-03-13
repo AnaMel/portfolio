@@ -1,6 +1,5 @@
 .portfolio {
     padding: 50px 0;
-    background-color: #FCFCFC;
     .container {
         flex-direction: column;
     }
@@ -8,17 +7,105 @@
 .project {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 50px;
+    }
 
 }
 .project-image {
     padding: 30px 5px;
     background-color: rgba(239,89,33,0.7);
     border-radius: 30px;
+    flex-basis: 60%;
+    max-width: 800px;
+    transition: all 0.7s;
+    &:hover {
+        background-color: rgba(239,89,33,1);
+    }
+    @media (max-width: 940px) {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
 }
 
+.project-description {
+    flex-basis: 35%;
+    @media (max-width: 940px) {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+    @media (max-width: 480px) {
+        text-align: center;
+    }
+    h3 {
+        font-size: 5rem;
+        margin-bottom: 15px;
+        @media (max-width: 768px) {
+            font-size: 3.5rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 3rem;
+        }
+    }
+    button {
+        width: 250px;
+        background-color: #EBEBEB;
+        margin: 15px 15px 0 0;
+        color: $main-dark;
+        @media (max-width: 1185px) {
+            // width: 172px;
+            font-size: 1.6rem;
+        }
+        @media (max-width: 480px) {
+            // width: 172px;
+            margin: 15px 0 0;
+        }
+        &:hover,
+        &:focus {
+            background-color: #F3F3F3;
+        }
+        a {
+            padding: 20px 30px;
+        }
+    }
+}
 .campgenda {
+    @media (max-width: 940px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
     .project-image{
-        background-color: #39b877;
+        background-color: rgba(57, 184, 119, 0.7);
+    }
+}
+
+.advisory {
+    .project-image {
+        background-color: rgba(74, 194, 191, 0.7);
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    @media (max-width: 480px) {
+        justify-content: center;
+    }
+    .tag {
+        padding: 7.5px 10px;
+        background-color: $main-dark;
+        color: $grey;
+        margin: 0 10px 10PX 0;
+        @media (max-width: 480px) {
+            padding: 5px 7.5px;
+        }
     }
 }

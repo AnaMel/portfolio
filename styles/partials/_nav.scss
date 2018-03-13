@@ -1,10 +1,67 @@
 nav {
     background-color: $main-ltgrey;
     padding: 40px 0;
+    @media (max-width: 768px) {
+        padding: 15px 0;
+    }
     ul {
         flex-basis: 50%;
+        @media (max-width: 940px) {
+            flex-basis: 60%;
+        }
+    
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 768px) {
+            visibility: hidden;
+            opacity: 0;
+            top: -10px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 15px;
+            height: 0;
+            flex-basis: 100%;
+        }
     }
     a {
         padding: 10px 15px;
+        @media (max-width: 768px) {
+            display: block;
+            padding: 20px 15px;
+        }
     }
+}
+
+ul.target {
+    // position: relative;
+    transition: all 0.5s ease-in;
+}
+
+.logo {
+    font-size: 3rem;
+    color: rgb(239, 89, 33);
+    font-weight: bold;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+label.toggle {
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.responsiveContainer.visibility {
+    visibility: visible;
+    opacity: 1;
+    top: 15px;
+    height: 250px;
+}
+
+label.hide {
+    display: none;
 }
